@@ -1,0 +1,443 @@
+name: "Evaluatie (Nederlands)"
+description: "Uw mening maakt de toepassing beter · ongeveer 15 minuten"
+title: "[Evaluatie] "
+labels: ["evaluation"]
+body:
+  - type: markdown
+    attributes:
+      value: "> [!CAUTION]\n> **Schrijf nooit een naam** — Issues op GitHub zijn openbaar: iedereen kan ze lezen. Schrijf nooit namen van personen of van uw bedrijf, en geen vertrouwelijke gegevens. Schrijf liever “een werknemer”, “de site”, “eenheid 3”."
+  - type: markdown
+    attributes:
+      value: "## Waarom uw mening telt\n\nPrevReport is gebouwd op basis van de officiële formulieren en regels. Maar u gebruikt het, op echte sites, voor echte verslagen. Alleen echt gebruik toont wat traag, onduidelijk, ontbrekend — of fout is.\n\n- Elk antwoord wordt gelezen door de maker van de toepassing, Hans Tandt.\n- De afgesproken wijzigingen komen in de volgende versie.\n- De toepassing laat u weten wanneer die versie er is: bovenaan verschijnt een goudkleurige knop “Nieuwe versie”.\n\n> [!NOTE]\n> **Een foute regel telt het zwaarst** — Het verslag gaat naar het comité (CPBW, CSE of ASA) en de inspectie kan het nakijken. Is een regel, een graad of een woord fout voor uw land, meld het ons — met het document en het artikel."
+  - type: markdown
+    attributes:
+      value: "Beantwoord alleen wat u gebruikt hebt. Laat de rest leeg.\n\nGeef een score van 1 tot 5: 1 = zeer slecht, 3 = aanvaardbaar, 5 = zeer goed.\n\nDezelfde vragen als pdf / Word: map `Evaluation` van deze repository."
+  - type: markdown
+    attributes:
+      value: "## Over u"
+  - type: dropdown
+    id: q01
+    attributes:
+      label: "Land van uw afdeling(en)"
+      options:
+        - "België"
+        - "Frankrijk"
+        - "Duitsland"
+        - "ander"
+    validations:
+      required: false
+  - type: dropdown
+    id: q02
+    attributes:
+      label: "Uw functie"
+      options:
+        - "preventieadviseur"
+        - "aangewezen bevoegde werknemer"
+        - "veiligheidsdeskundige (Sifa)"
+        - "ander"
+    validations:
+      required: false
+  - type: dropdown
+    id: q03
+    attributes:
+      label: "Opleidingsniveau (België)"
+      options:
+        - "niveau 1"
+        - "niveau 2"
+        - "basisopleiding"
+    validations:
+      required: false
+  - type: input
+    id: q04
+    attributes:
+      label: "Aantal afdelingen in de toepassing"
+    validations:
+      required: false
+  - type: dropdown
+    id: q05
+    attributes:
+      label: "Periodiek verslag"
+      options:
+        - "maandelijks"
+        - "driemaandelijks"
+        - "beide"
+    validations:
+      required: false
+  - type: dropdown
+    id: q06
+    attributes:
+      label: "Schermtaal"
+      options:
+        - "FR"
+        - "EN"
+        - "NL"
+        - "DE"
+    validations:
+      required: false
+  - type: dropdown
+    id: q07
+    attributes:
+      label: "Hoe lang u de toepassing gebruikt"
+      options:
+        - "eerste keer"
+        - "minder dan 1 maand"
+        - "1 tot 3 maanden"
+        - "langer"
+    validations:
+      required: false
+  - type: input
+    id: q08
+    attributes:
+      label: "Versie (linksboven getoond)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Opstarten en instellingen"
+  - type: dropdown
+    id: q09
+    attributes:
+      label: "Het uitpakken en starten van de toepassing ging goed."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q10
+    attributes:
+      label: "De demogegevens hielpen me de toepassing te begrijpen."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q11
+    attributes:
+      label: "Een afdeling maken of wijzigen (Instellingen → Afdelingen) was duidelijk."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q12
+    attributes:
+      label: "De mappen kiezen (Instellingen → Mappen) was duidelijk."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: textarea
+    id: q13
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Het periodieke verslag"
+  - type: dropdown
+    id: q14
+    attributes:
+      label: "De vragen zijn duidelijk."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q15
+    attributes:
+      label: "De grijze hulpregels onder de vragen helpen me."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q16
+    attributes:
+      label: "Regels toevoegen en wijzigen in de tabellen werkt goed."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q17
+    attributes:
+      label: "Open acties en het ongevallenregister worden correct overgenomen van de vorige periode."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q18
+    attributes:
+      label: "Het Voorbeeld toont de punten die ik moet nakijken."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: textarea
+    id: q19
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Het Word-verslag"
+  - type: dropdown
+    id: q20
+    attributes:
+      label: "De opmaak ziet er professioneel uit."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q21
+    attributes:
+      label: "De inhoud is volledig en juist."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q22
+    attributes:
+      label: "Het verslag is in de juiste taal: de taal van de afdeling."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: input
+    id: q23
+    attributes:
+      label: "Minuten bijwerken voor ik het verslag kan versturen (min)"
+    validations:
+      required: false
+  - type: textarea
+    id: q24
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Jaarverslag en statistieken"
+  - type: dropdown
+    id: q25
+    attributes:
+      label: "Het jaarverslag wordt juist ingevuld vanuit de periodieke verslagen."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q26
+    attributes:
+      label: "De ongevallengraden zijn juist voor mijn land."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q27
+    attributes:
+      label: "De statistieken (Excel en pdf) zijn nuttig."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: textarea
+    id: q28
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## De regels van uw land\n\nIs een vraag, een regel, een graad of een woord fout of ontbreekt het voor uw land? Schrijf wat, waar u het in de toepassing zag, en het document en het artikel waar het vandaan komt."
+  - type: textarea
+    id: q29
+    attributes:
+      label: "Wat fout is of ontbreekt — Waar in de toepassing — Document en artikel"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Handleiding en tijd"
+  - type: dropdown
+    id: q30
+    attributes:
+      label: "De handleiding (knop INFO) beantwoordt mijn vragen."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q31
+    attributes:
+      label: "De schermen zijn duidelijk in mijn taal."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: textarea
+    id: q32
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: input
+    id: q33
+    attributes:
+      label: "Minuten voor één maand- of kwartaalverslag — Vóór de toepassing (min)"
+    validations:
+      required: false
+  - type: input
+    id: q34
+    attributes:
+      label: "Minuten voor één maand- of kwartaalverslag — Met de toepassing (min)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Algemeen"
+  - type: dropdown
+    id: q35
+    attributes:
+      label: "Algemeen helpt de toepassing me in mijn werk."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: dropdown
+    id: q36
+    attributes:
+      label: "Ik zou de toepassing aanraden aan een andere adviseur."
+      options:
+        - "1 – zeer slecht"
+        - "2"
+        - "3 – aanvaardbaar"
+        - "4"
+        - "5 – zeer goed"
+        - "niet gebruikt"
+    validations:
+      required: false
+  - type: textarea
+    id: q37
+    attributes:
+      label: "Opmerking"
+    validations:
+      required: false
+  - type: textarea
+    id: q38
+    attributes:
+      label: "De 3 dingen om eerst te verbeteren"
+      value: "1. \n2. \n3. "
+    validations:
+      required: false
+  - type: textarea
+    id: q39
+    attributes:
+      label: "Wat ontbreekt er?"
+    validations:
+      required: false
+  - type: textarea
+    id: q40
+    attributes:
+      label: "Nog iets?"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "**Dank u** — Bedankt voor uw tijd. Elk antwoord wordt gelezen. De volgende versie meldt zelf wanneer ze klaar is."

@@ -1,0 +1,443 @@
+name: "Evaluation (English)"
+description: "Your opinion makes the app better · about 15 minutes"
+title: "[Evaluation] "
+labels: ["evaluation"]
+body:
+  - type: markdown
+    attributes:
+      value: "> [!CAUTION]\n> **Never write a name** — Issues on GitHub are public: everybody can read them. Never write the names of people or of your company, and no confidential data. Write “a worker”, “the site”, “unit 3” instead."
+  - type: markdown
+    attributes:
+      value: "## Why your opinion matters\n\nPrevReport was built from the official forms and rules. But you use it, on real sites, for real reports. Only real use shows what is slow, unclear, missing — or wrong.\n\n- Every answer is read by the creator of the app, Hans Tandt.\n- The changes agreed on go into the next version.\n- The app tells you when that version is there: a gold “New version” button appears at the top.\n\n> [!NOTE]\n> **A wrong rule counts most** — The report goes to the committee (CPPT, CSE or ASA) and the inspection can check it. If a rule, a rate or a word is wrong for your country, tell us — with the document and article."
+  - type: markdown
+    attributes:
+      value: "Answer only what you used. Leave the rest empty.\n\nGive a score from 1 to 5: 1 = very bad, 3 = acceptable, 5 = very good.\n\nThe same questions as a PDF / Word document: folder `Evaluation` of this repository."
+  - type: markdown
+    attributes:
+      value: "## About you"
+  - type: dropdown
+    id: q01
+    attributes:
+      label: "Country of your division(s)"
+      options:
+        - "Belgium"
+        - "France"
+        - "Germany"
+        - "other"
+    validations:
+      required: false
+  - type: dropdown
+    id: q02
+    attributes:
+      label: "Your role"
+      options:
+        - "prevention adviser"
+        - "designated employee"
+        - "safety specialist (Sifa)"
+        - "other"
+    validations:
+      required: false
+  - type: dropdown
+    id: q03
+    attributes:
+      label: "Training level (Belgium)"
+      options:
+        - "level 1"
+        - "level 2"
+        - "basic training"
+    validations:
+      required: false
+  - type: input
+    id: q04
+    attributes:
+      label: "Number of divisions in the app"
+    validations:
+      required: false
+  - type: dropdown
+    id: q05
+    attributes:
+      label: "Periodic report"
+      options:
+        - "monthly"
+        - "quarterly"
+        - "both"
+    validations:
+      required: false
+  - type: dropdown
+    id: q06
+    attributes:
+      label: "Screen language"
+      options:
+        - "FR"
+        - "EN"
+        - "NL"
+        - "DE"
+    validations:
+      required: false
+  - type: dropdown
+    id: q07
+    attributes:
+      label: "How long you have used the app"
+      options:
+        - "first try"
+        - "less than 1 month"
+        - "1 to 3 months"
+        - "longer"
+    validations:
+      required: false
+  - type: input
+    id: q08
+    attributes:
+      label: "Version (shown at the top left)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Start and settings"
+  - type: dropdown
+    id: q09
+    attributes:
+      label: "Unzipping and starting the app went well."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q10
+    attributes:
+      label: "The demo data helped me understand the app."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q11
+    attributes:
+      label: "Creating or changing a division (Settings → Divisions) was clear."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q12
+    attributes:
+      label: "Choosing the folders (Settings → Folders) was clear."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: textarea
+    id: q13
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## The periodic report"
+  - type: dropdown
+    id: q14
+    attributes:
+      label: "The questions are clear."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q15
+    attributes:
+      label: "The grey help lines under the questions help me."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q16
+    attributes:
+      label: "Adding and changing rows in the tables works well."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q17
+    attributes:
+      label: "Open actions and the accident register are taken over correctly from the previous period."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q18
+    attributes:
+      label: "The Preview shows the points I must check."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: textarea
+    id: q19
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## The Word report"
+  - type: dropdown
+    id: q20
+    attributes:
+      label: "The layout looks professional."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q21
+    attributes:
+      label: "The content is complete and correct."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q22
+    attributes:
+      label: "The report is in the right language: the language of the division."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: input
+    id: q23
+    attributes:
+      label: "Minutes of editing before I can send the report (min)"
+    validations:
+      required: false
+  - type: textarea
+    id: q24
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Annual report and statistics"
+  - type: dropdown
+    id: q25
+    attributes:
+      label: "The annual report is filled in correctly from the periodic reports."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q26
+    attributes:
+      label: "The accident rates are correct for my country."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q27
+    attributes:
+      label: "The statistics (Excel and PDF) are useful."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: textarea
+    id: q28
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## The rules of your country\n\nIs a question, a rule, a rate or a word wrong or missing for your country? Write what, where you saw it in the app, and the document and article it comes from."
+  - type: textarea
+    id: q29
+    attributes:
+      label: "What is wrong or missing — Where in the app — Document and article"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Manual and time"
+  - type: dropdown
+    id: q30
+    attributes:
+      label: "The manual (INFO button) answers my questions."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q31
+    attributes:
+      label: "The screens are clear in my language."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: textarea
+    id: q32
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: input
+    id: q33
+    attributes:
+      label: "Minutes for one monthly or quarterly report — Before the app (min)"
+    validations:
+      required: false
+  - type: input
+    id: q34
+    attributes:
+      label: "Minutes for one monthly or quarterly report — With the app (min)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Overall"
+  - type: dropdown
+    id: q35
+    attributes:
+      label: "Overall, the app helps me in my work."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: dropdown
+    id: q36
+    attributes:
+      label: "I would recommend the app to another adviser."
+      options:
+        - "1 – very bad"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – very good"
+        - "not used"
+    validations:
+      required: false
+  - type: textarea
+    id: q37
+    attributes:
+      label: "Comment"
+    validations:
+      required: false
+  - type: textarea
+    id: q38
+    attributes:
+      label: "The 3 things to improve first"
+      value: "1. \n2. \n3. "
+    validations:
+      required: false
+  - type: textarea
+    id: q39
+    attributes:
+      label: "What is missing?"
+    validations:
+      required: false
+  - type: textarea
+    id: q40
+    attributes:
+      label: "Anything else?"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "**Thank you** — Thank you for your time. Every answer is read. The next version tells you itself when it is ready."

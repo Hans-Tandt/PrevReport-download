@@ -1,0 +1,443 @@
+name: "Évaluation (français)"
+description: "Votre avis rend l’application meilleure · environ 15 minutes"
+title: "[Évaluation] "
+labels: ["evaluation"]
+body:
+  - type: markdown
+    attributes:
+      value: "> [!CAUTION]\n> **N’écrivez jamais un nom** — Les issues sur GitHub sont publiques : tout le monde peut les lire. N’écrivez jamais le nom d’une personne ou de votre entreprise, ni aucune donnée confidentielle. Écrivez plutôt « un travailleur », « le site », « l’unité 3 »."
+  - type: markdown
+    attributes:
+      value: "## Pourquoi votre avis compte\n\nPrevReport a été construit à partir des formulaires et des règles officiels. Mais c’est vous qui l’utilisez, sur de vrais sites, pour de vrais rapports. Seul l’usage réel montre ce qui est lent, pas clair, manquant — ou faux.\n\n- Chaque réponse est lue par le créateur de l’application, Hans Tandt.\n- Les changements retenus entrent dans la prochaine version.\n- L’application vous prévient quand cette version est là : un bouton doré « Nouvelle version » apparaît en haut.\n\n> [!NOTE]\n> **Une règle fausse compte le plus** — Le rapport va au comité (CPPT, CSE ou ASA) et l’inspection peut le contrôler. Si une règle, un taux ou un mot est faux pour votre pays, dites-le — avec le document et l’article."
+  - type: markdown
+    attributes:
+      value: "Répondez seulement à ce que vous avez utilisé. Laissez le reste vide.\n\nDonnez une note de 1 à 5 : 1 = très mauvais, 3 = acceptable, 5 = très bon.\n\nLes mêmes questions en PDF / Word : dossier `Evaluation` de ce dépôt."
+  - type: markdown
+    attributes:
+      value: "## À propos de vous"
+  - type: dropdown
+    id: q01
+    attributes:
+      label: "Pays de votre (vos) division(s)"
+      options:
+        - "Belgique"
+        - "France"
+        - "Allemagne"
+        - "autre"
+    validations:
+      required: false
+  - type: dropdown
+    id: q02
+    attributes:
+      label: "Votre fonction"
+      options:
+        - "conseiller en prévention"
+        - "salarié désigné compétent"
+        - "Fachkraft für Arbeitssicherheit (Sifa)"
+        - "autre"
+    validations:
+      required: false
+  - type: dropdown
+    id: q03
+    attributes:
+      label: "Niveau de formation (Belgique)"
+      options:
+        - "niveau 1"
+        - "niveau 2"
+        - "formation de base"
+    validations:
+      required: false
+  - type: input
+    id: q04
+    attributes:
+      label: "Nombre de divisions dans l’application"
+    validations:
+      required: false
+  - type: dropdown
+    id: q05
+    attributes:
+      label: "Rapport périodique"
+      options:
+        - "mensuel"
+        - "trimestriel"
+        - "les deux"
+    validations:
+      required: false
+  - type: dropdown
+    id: q06
+    attributes:
+      label: "Langue de l’écran"
+      options:
+        - "FR"
+        - "EN"
+        - "NL"
+        - "DE"
+    validations:
+      required: false
+  - type: dropdown
+    id: q07
+    attributes:
+      label: "Depuis quand vous utilisez l’application"
+      options:
+        - "premier essai"
+        - "moins d’1 mois"
+        - "1 à 3 mois"
+        - "plus longtemps"
+    validations:
+      required: false
+  - type: input
+    id: q08
+    attributes:
+      label: "Version (affichée en haut à gauche)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Démarrage et paramètres"
+  - type: dropdown
+    id: q09
+    attributes:
+      label: "Décompresser et lancer l’application s’est bien passé."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q10
+    attributes:
+      label: "Les données de démonstration m’ont aidé à comprendre l’application."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q11
+    attributes:
+      label: "Créer ou modifier une division (Paramètres → Divisions) était clair."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q12
+    attributes:
+      label: "Choisir les dossiers (Paramètres → Dossiers) était clair."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: textarea
+    id: q13
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Le rapport périodique"
+  - type: dropdown
+    id: q14
+    attributes:
+      label: "Les questions sont claires."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q15
+    attributes:
+      label: "Les lignes d’aide grises sous les questions m’aident."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q16
+    attributes:
+      label: "Ajouter et modifier des lignes dans les tableaux fonctionne bien."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q17
+    attributes:
+      label: "Les actions ouvertes et le registre des accidents sont bien repris de la période précédente."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q18
+    attributes:
+      label: "L’Aperçu montre les points que je dois vérifier."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: textarea
+    id: q19
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Le rapport Word"
+  - type: dropdown
+    id: q20
+    attributes:
+      label: "La mise en page a l’air professionnelle."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q21
+    attributes:
+      label: "Le contenu est complet et correct."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q22
+    attributes:
+      label: "Le rapport est dans la bonne langue : la langue de la division."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: input
+    id: q23
+    attributes:
+      label: "Minutes de retouche avant de pouvoir envoyer le rapport (min)"
+    validations:
+      required: false
+  - type: textarea
+    id: q24
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Rapport annuel et statistiques"
+  - type: dropdown
+    id: q25
+    attributes:
+      label: "Le rapport annuel est bien pré-rempli à partir des rapports périodiques."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q26
+    attributes:
+      label: "Les taux d’accidents sont corrects pour mon pays."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q27
+    attributes:
+      label: "Les statistiques (Excel et PDF) sont utiles."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: textarea
+    id: q28
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Les règles de votre pays\n\nUne question, une règle, un taux ou un mot est-il faux ou manquant pour votre pays ? Écrivez quoi, où vous l’avez vu dans l’application, et le document et l’article d’où cela vient."
+  - type: textarea
+    id: q29
+    attributes:
+      label: "Ce qui est faux ou manque — Où dans l’application — Document et article"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Manuel et temps"
+  - type: dropdown
+    id: q30
+    attributes:
+      label: "Le manuel (bouton INFO) répond à mes questions."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q31
+    attributes:
+      label: "Les écrans sont clairs dans ma langue."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: textarea
+    id: q32
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: input
+    id: q33
+    attributes:
+      label: "Minutes pour un rapport mensuel ou trimestriel — Avant l’application (min)"
+    validations:
+      required: false
+  - type: input
+    id: q34
+    attributes:
+      label: "Minutes pour un rapport mensuel ou trimestriel — Avec l’application (min)"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Dans l’ensemble"
+  - type: dropdown
+    id: q35
+    attributes:
+      label: "Dans l’ensemble, l’application m’aide dans mon travail."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: dropdown
+    id: q36
+    attributes:
+      label: "Je recommanderais l’application à un autre conseiller."
+      options:
+        - "1 – très mauvais"
+        - "2"
+        - "3 – acceptable"
+        - "4"
+        - "5 – très bon"
+        - "pas utilisé"
+    validations:
+      required: false
+  - type: textarea
+    id: q37
+    attributes:
+      label: "Commentaire"
+    validations:
+      required: false
+  - type: textarea
+    id: q38
+    attributes:
+      label: "Les 3 choses à améliorer en premier"
+      value: "1. \n2. \n3. "
+    validations:
+      required: false
+  - type: textarea
+    id: q39
+    attributes:
+      label: "Qu’est-ce qui manque ?"
+    validations:
+      required: false
+  - type: textarea
+    id: q40
+    attributes:
+      label: "Autre chose ?"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "**Merci** — Merci pour votre temps. Chaque réponse est lue. La prochaine version vous prévient elle-même quand elle est prête."
