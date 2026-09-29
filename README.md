@@ -5,6 +5,9 @@ safety report of a division, saves the answers, and writes the Word report in th
 language.
 
 - **Countries:** Belgium (SIPPT monthly / quarterly report, annual report form A), France, Germany.
+- **Prevention plans (new in V1.6):** the Belgian global prevention plan (up to 5 years) and the annual
+  action plan, filled in from each other and followed in the monthly reports. France and Germany: as a
+  planning tool.
 - **Screens and questions:** English, French, Dutch, German.
 - **Offline:** no internet needed; your data stays on your PC. Only the check for a new version asks
   GitHub which version is the newest (see below).
@@ -15,7 +18,7 @@ France and Germany listed in the manual. The app helps you write the report; it 
 
 ## Download and start
 
-1. Open **[Releases](../../releases/latest)** and download `PrevReport_V1.5.zip`.
+1. Open **[Releases](../../releases/latest)** and download `PrevReport_V1.6.zip`.
 2. Unzip it in a folder where you can write (Desktop or Documents — not `C:\Program Files`).
 3. Double-click `PrevReport.exe`. Nothing else to install.
 
